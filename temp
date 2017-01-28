@@ -1,0 +1,175 @@
+
+db.products.insert(
+{ "_id" : 1, "name" : "S7 Edge", "description" : "Android powerd mobile phone", "brand" : "Samsung", "price" : "800", "friends": "6","avgrating": "4.0","priority": "15"})
+
+db.products.insert(
+{ "_id" : 2, "name" : "S6 Edge", "description" : "Android powerd Mobile phone", "brand" : "Samsung", "price" : "400", "friends": "4","avgrating": "4.4","priority": "13"})
+
+db.products.insert(
+{ "_id" : 3, "name" : "IPhone 6S", "description" : "64 Gb IOS Mobile phone", "brand" : "Apple", "price" : "500" ,"friends": "2","avgrating": "5.0","priority": "12"})
+
+db.products.insert(
+{ "_id" : 4, "name" : "Pixel XL", "description" : "64 Gb Android powered phone", "brand" : "Google", "price" : "769" ,"friends": "1","avgrating": "4.5","priority": "9"})
+
+db.products.insert(
+{ "_id" : 5, "name" : "Fitbit charge", "description" : "Wearable device", "brand" : "Fitbit", "price" : "100" ,"friends": "0","avgrating": "3.5","priority": "3"})
+
+db.products.insert(
+{ "_id" : 6, "name" : "Gear Fit 2", "description" : "Wearable device", "brand" : "Gear", "price" : "130" ,"friends": "2","avgrating": "3.0","priority": "5"})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+db.products.insert(
+{ "_id" : 7, "name" : "Aroma 6-Cup Pot-Style Rice Cooker", "description" : "Electric powered Rice cooker", "brand" : "Aroma", "price" : "14.96" ,"friends-recommended": "6","average-rating": "2.6","priority": 1})
+
+db.products.insert(
+{ "_id" : 8, "name" : "Olay Active Hydrating Beauty Facial Moisturizer Fluid Lotion, 6.0 fl oz", "description" : "Provides an immediate surge of active moistur", "brand" : "Olay", "price" : "8.94" ,"friends-recommended": "8","average-rating": "3.0","priority": 2})
+
+db.products.insert(
+{ "_id" : 9, "name" : "Bounty Select-a-Size Mega Roll Paper Towels, 105 sheets, 12 rolls", "description" : "12 rolls; 105 2-ply sheets per roll", "brand" : "Bounty", "price" : "17.97" ,"friends-recommended": "7","average-rating": "3.7","priority": 7})
+
+
+db.products.insert(
+{ "_id" : 10, "name" : "Doritos® Nacho Cheese Flavored Tortilla Chips 15.5 oz. Bag", "description" : "Your favorite bold nacho cheese flavored tortilla chips", "brand" : "Doritos", "price" : "3.58","friends-recommended": "8","average-rating": "3.5","priority": 9})
+
+
+
+
+Users : 5
+Products: 10
+Orders: Unlimited
+
+Priority function !!
+
+db.users.insert(
+{ 
+	_id : 1, 
+	name : "Sam", 
+	email : "sam@yahoo.com", 
+	username : "sam", 
+	password : "sample",
+	list : [1,2,3,4,5]
+});
+
+
+db.products.insert(
+{
+	_id:6,
+	name: 'Gear Fit 2', 
+	description: 'Wearable device',
+	category: 'Tech'
+	brand: 'Samsung', 
+	price: '200',
+	priority: 10,
+	friends_recommended: 5
+});
+
+
+db.interests.insert({
+	_id:1,
+	product_id:1,
+	user_id:4,
+	rating:5
+}
+);
+
+{ 
+"_id" : ObjectId("58817961803c723cf0114eb6"), "name" : "Ashok", "email" : "ashok@aratikatla.com", "username" : "ashok", "password" : "$2a$10$b/75ies6VNebCVgb833pDOjsGcYEzqbSHhMBrO3AT9fG/1ctsaR0y", "uuid" : "42d7c8a0-deba-11e6-b6e7-eba5415e0c06" }
+
+
+var newUser = {
+			name: name,
+			email: email,
+			username:username,
+			password:password,
+			uuid:uuidV1()
+		}
+
+var product = {
+	name:  ,
+	price: ,
+	category: ,
+	brand: ,
+	reviews: ,
+	rating: ,
+	ratedBy: 
+}
+
+
+var order = {
+	items: [],
+	totalCost: ,
+	userId:
+}
+
+
+db.sampleProduct.insert({ "_id" : 1, "name" : "S7 Edge", "description" : "Android powerd mobile phone", "brand" : "Samsung", "price" : "800", "friends-recommended": "3","average-rating": "4.8","priority": 15})
+
+db.sampleProducts.insert(
+{ "_id" : 1, "name" : "S7 Edge", "description" : "Android powerd mobile phone", "brand" : "Samsung", "price" : "800", "friends-recommended": "3","average-rating": "4.8","priority": 15})
+
+db.sampleProduct.insert(
+{ "_id" : 2, "name" : "S6 Edge", "description" : "Android powerd Mobile phone", "brand" : "Samsung", "price" : "400", "friends-recommended": "4","average-rating": "4.4","priority": 13})
+
+db.sampleProduct.insert(
+{ "_id" : 3, "name" : "IPhone 6S", "description" : "64 Gb IOS Mobile phone", "brand" : "Apple", "price" : "500" ,"friends-recommended": "2","average-rating": "4.6","priority": 12})
+
+db.sampleProduct.insert(
+{ "_id" : 4, "name" : "Pixel XL", "description" : "64 Gb Android powered phone", "brand" : "Google", "price" : "769" ,"friends-recommended": "1","average-rating": "3.8","priority": 9})
+
+db.sampleProduct.insert(
+{ "_id" : 5, "name" : "Fitbit charge", "description" : "Wearable device", "brand" : "Fitbit", "price" : "100" ,"friends-recommended": "0","average-rating": "1.5","priority": 3})
+
+db.sampleProduct.insert(
+{ "_id" : 6, "name" : "Gear Fit 2", "description" : "Wearable device", "brand" : "Gear", "price" : "130" ,"friends-recommended": "0","average-rating": "4.0","priority": 5})
+
+db.sampleProduct.insert(
+{ "_id" : 7, "name" : "Aroma 6-Cup Pot-Style Rice Cooker
+", "description" : "Electric powered Rice cooker", "brand" : "Aroma", "price" : "14.96" ,"friends-recommended": "6","average-rating": "2.6","priority": 1})
+
+db.sampleProduct.insert(
+{ "_id" : 8, "name" : "Olay Active Hydrating Beauty Facial Moisturizer Fluid Lotion, 6.0 fl oz", "description" : "Provides an immediate surge of active moistur", "brand" : "Olay", "price" : "8.94" ,"friends-recommended": "8","average-rating": "3.0","priority": 2})
+
+db.sampleProduct.insert(
+{ "_id" : 9, "name" : "Bounty Select-a-Size Mega Roll Paper Towels, 105 sheets, 12 rolls", "description" : "12 rolls; 105 2-ply sheets per roll", "brand" : "Bounty", "price" : "17.97" ,"friends-recommended": "7","average-rating": "3.7","priority": 7})
+
+
+db.sampleProduct.insert(
+{ "_id" : 10, "name" : "Doritos® Nacho Cheese Flavored Tortilla Chips 15.5 oz. Bag", "description" : "Your favorite bold nacho cheese flavored tortilla chips", "brand" : "Doritos", "price" : "3.58","friends-recommended": "8","average-rating": "3.5","priority": 9})
+
+
+
+
+
+
+
+
+{ "_id" : 11, "name" : "Fitbit charge", "description" : "Wearable device", "brand" : "Fitbit", "price" : "100" },
+{ "_id" : 12, "name" : "Gear Fit 2", "description" : "Wearable device", "brand" : "Gear", "price" : "200" },
+{ "_id" : 13, "name" : "S7 Edge", "description" : "Mobile phone", "brand" : "Samsung", "price" : "500" },
+{ "_id" : 14, "name" : "S6 Edge", "description" : "Mobile phone", "brand" : "Samsung", "price" : "400" },
+{ "_id" : 15, "name" : "IPhone", "description" : "Mobile phone", "brand" : "Appple", "price" : "300" },
+{ "_id" : 16, "name" : "Pixel XL", "description" : "Mobile phone", "brand" : "Google", "price" : "350" },
+{ "_id" : 17, "name" : "Fitbit charge", "description" : "Wearable device", "brand" : "Fitbit", "price" : "100" },
+{ "_id" :18, "name" : "Gear Fit 2", "description" : "Wearable device", "brand" : "Gear", "price" : "200" },
+{ "_id" : 19, "name" : "S7 Edge", "description" : "Mobile phone", "brand" : "Samsung", "price" : "500" },
+{ "_id" : 20, "name" : "S6 Edge", "description" : "Mobile phone", "brand" : "Samsung", "price" : "400" }
+]);
